@@ -22,7 +22,7 @@ High Score: This games uses file handling to maintain highscore in game
 
 How to run:
 
-Simply run sanke game application
+Simply run Snake_Game.exe
 
 
 Source Code:
