@@ -1,0 +1,12 @@
+﻿  Game.cpp
+C:\thtcsg\Snake_Game\Game.cpp(23,16): warning C4305: '=': truncation from 'double' to 'float'
+C:\thtcsg\Snake_Game\Game.cpp(298,62): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+C:\thtcsg\Snake_Game\Game.cpp(298,41): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+C:\thtcsg\Snake_Game\Game.cpp(302,59): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+C:\thtcsg\Snake_Game\Game.cpp(302,40): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+  main.cpp
+  Generating code
+  Previous IPDB not found, fall back to full compilation.
+  All 229 functions were compiled because no usable IPDB/IOBJ from previous compilation was found.
+  Finished generating code
+  Snake_Game.vcxproj -> C:\thtcsg\Snake_Game\x64\Release\Snake_Game.exe
