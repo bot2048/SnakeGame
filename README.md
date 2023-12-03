@@ -1,30 +1,32 @@
-Snake Game in C++
-Overview
-This Snake Game is a console-based implementation in C++. It provides a classic gaming experience where the player controls a snake that moves around the screen, eating food to grow longer while avoiding collisions with itself and the game boundaries.
 
+Snake Game in C++: Project Overview
+Introduction
+This console-based Snake Game, implemented in C++, offers a classic gaming experience where players control a snake that navigates the screen. The objective is to consume food, consequently growing longer, while carefully avoiding collisions with both itself and the game boundaries.
 
 Features
+Textures
+The game incorporates visually appealing textures, including a background image generated from DALLE, and apple and block logos sourced from stock images.
 
-Textures: We generated background image from DALLE and used apple logo and block logo from stock images.
+Fonts
+Utilizing fonts from Diediedie Font enhances the visual presentation of the game.
 
-Fonts: We used font from https://www.dafont.com/diediedie.font
+Simple Controls
+Players can easily maneuver the snake using arrow keys (UP, DOWN, LEFT, RIGHT) or (W, A, S, D).
 
-Simple Controls: Use arrow keys (UP, DOWN, LEFT, RIGHT) or (W,A,S,D) to control the snake's direction.
+Scoring System
+Points are accumulated as the snake consumes food, with each piece contributing to the snake's length.
 
-Scoring System: Gain points by eating food, with each piece making the snake longer.
+Game Over
+The game concludes when the snake collides with the boundaries or itself.
 
-Game Over: The game ends when the snake collides with the boundaries or itself.
+Game Sounds
+Enhancing the gaming experience, the game features sound effects triggered when the snake consumes food and a distinctive sound when the game concludes.
 
-Game Sounds: The game makes sound when snake eats a food and a boo sound when game gets over
+High Score
+Leveraging file handling, the game maintains and displays a high score for players to strive towards.
 
-High Score: This games uses file handling to maintain highscore in game
+How to Run
+Execute the Snake_Game.exe file to launch the game effortlessly.
 
-
-How to run:
-
-Simply run Snake_Game.exe
-
-
-Source Code:
-
-Source code is in Code folder
+Source Code
+The source code is accessible in the Code folder.
