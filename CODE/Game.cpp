@@ -20,7 +20,7 @@ void Game::initVariables() // initialise variables
 	this->snake_y[3] = 0;
 	this->dir = 1;  // initial direction of snake
 	this->timer = 0; 
-	this->delay = 0.1;
+	this->delay = 0.1; //set speed
 	this->yourscore = -1;// checks for game over condition
 
 
@@ -79,7 +79,7 @@ void Game::initText()
 	this->game_over.setFont(this->font);
 	this->game_over.setCharacterSize(130);
 	this->game_over.setFillColor(sf::Color::Red);
-	this->game_over.setString("GameÍOver");
+	this->game_over.setString("GameÃOver");
 	this->game_over.setPosition(105, 15);
 
 	this->yourScore_text.setFont(this->font);
@@ -183,9 +183,9 @@ void Game::move()
 		this->snake_y[i] = this->snake_y[i - 1];
 	}
 	if (this->dir == 2) this->snake_y[0] += 1;
-	if (this->dir == -1) this->snake_x[0] -= 1;
-	if (this->dir == 1) this->snake_x[0] += 1;
-	if (this->dir == -2) this->snake_y[0] -= 1;
+	else if (this->dir == -1) this->snake_x[0] -= 1;
+	else if (this->dir == 1) this->snake_x[0] += 1;
+	else if (this->dir == -2) this->snake_y[0] -= 1;
 
 	if ((this->snake_x[0] == this->food_x) && (this->snake_y[0] == this->food_y))
 	{
@@ -238,14 +238,14 @@ void Game::getDir()
 	if (this->dir == 1 || this->dir == -1)
 	{
 		if (sf::Keyboard::isKeyPressed(sf::Keyboard::Up)|| sf::Keyboard::isKeyPressed(sf::Keyboard::W)) dir = -2;
-		if (sf::Keyboard::isKeyPressed(sf::Keyboard::Down) || sf::Keyboard::isKeyPressed(sf::Keyboard::S)) dir = 2;
+		else if (sf::Keyboard::isKeyPressed(sf::Keyboard::Down) || sf::Keyboard::isKeyPressed(sf::Keyboard::S)) dir = 2;
 
 	}
 
 	else if (this->dir == 2 || this->dir == -2) 
 	{
 		if (sf::Keyboard::isKeyPressed(sf::Keyboard::Left) || sf::Keyboard::isKeyPressed(sf::Keyboard::A)) dir = -1;
-		if (sf::Keyboard::isKeyPressed(sf::Keyboard::Right) || sf::Keyboard::isKeyPressed(sf::Keyboard::D)) dir = 1;
+		else if (sf::Keyboard::isKeyPressed(sf::Keyboard::Right) || sf::Keyboard::isKeyPressed(sf::Keyboard::D)) dir = 1;
 	}
 	if (this->timer > this->delay)
 	{
