@@ -38,21 +38,6 @@ private:
 	sf::Vector2i mousePosWindow;
 	sf::Vector2f mousePosView;
 
-	//Pricate Functions
-	void initVariables();
-	void initWindow();
-	void initFonts();
-	void initText();
-
-public:
-	//constructors destructors
-	Game();
-	virtual ~Game();
-
-	//accessors
-
-	const bool running() const;
-	const bool getEndGame()  const;
 
 	//resources
 	sf::Font font;
@@ -81,14 +66,32 @@ public:
 	sf::SoundBuffer sb2;
 
 
-	//functions
+
+	//Private Functions
+	void initVariables();
+	void initWindow();
+	void initFonts();
+	void initText();
 	void pollEvents();
 	void updateMousePositions();
 	void move();
 	void getDir();
-	void update();
 	void renderScreen1();
 	void renderScreen2();
+
+public:
+	//constructors destructors
+	Game();
+	virtual ~Game();
+
+	//accessors
+
+	const bool running() const;
+	const bool getEndGame()  const;
+
+	//functions
+	
 	void render();
+	void update();
 };
 
